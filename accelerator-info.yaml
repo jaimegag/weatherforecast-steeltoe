@@ -1,0 +1,15 @@
+id: 69ef359e-fc60-44cd-87fc-48d19971ce93
+timestamp: 2023-05-22T23:06:39Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: harbor.korok.tkg-vsp-lab.hyrulelab.com/tap/tap-packages@sha256:d49afe1be8976ae904eb9121fa10f8af03aea247e92a6b8941474bfdf71689e0
+fragments:
+  - name: tap-workload
+    source:
+      image: harbor.korok.tkg-vsp-lab.hyrulelab.com/tap/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: weatherforecast
+  projectName: weatherforecast-steeltoe
